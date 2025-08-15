@@ -1,0 +1,163 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Page Not Found - Raju Gottumukkala</title>
+    <meta name="description" content="The page you're looking for doesn't exist.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <style>
+        .error-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #670000 0%, #8B0000 100%);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .error-container {
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 60px 40px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .error-code {
+            font-size: 8rem;
+            font-weight: 900;
+            color: #FFEFAE;
+            margin: 0;
+            line-height: 1;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        
+        .error-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 20px 0;
+            color: #FFEFAE;
+        }
+        
+        .error-message {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+        
+        .error-actions {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-error {
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .btn-primary {
+            background: #FFEFAE;
+            color: #670000;
+            border-color: #FFEFAE;
+        }
+        
+        .btn-primary:hover {
+            background: transparent;
+            color: #FFEFAE;
+            border-color: #FFEFAE;
+            transform: translateY(-3px);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #FFEFAE;
+            border-color: #FFEFAE;
+        }
+        
+        .btn-secondary:hover {
+            background: #FFEFAE;
+            color: #670000;
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 6rem;
+            }
+            
+            .error-title {
+                font-size: 2rem;
+            }
+            
+            .error-container {
+                padding: 40px 20px;
+            }
+            
+            .error-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-section">
+        <div class="error-container">
+            <h1 class="error-code">404</h1>
+            <h2 class="error-title">Page Not Found</h2>
+            <p class="error-message">
+                The page you're looking for doesn't exist or has been moved. 
+                Don't worry, you can navigate back to safety.
+            </p>
+            <div class="error-actions">
+                <a href="/" class="btn-error btn-primary">Go Home</a>
+                <a href="/profile" class="btn-error btn-secondary">About Me</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    
+    <script>
+        // Security: Prevent iframe embedding
+        if (top !== window) {
+            top.location = window.location;
+        }
+        
+        // Security: Disable right-click context menu
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        // Security: Disable text selection
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });
+        
+        // Security: Disable drag and drop
+        document.addEventListener('dragstart', function(e) {
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>

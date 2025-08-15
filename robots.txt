@@ -1,0 +1,41 @@
+User-agent: *
+Allow: /
+Allow: /profile
+Allow: /experience
+Allow: /projects
+Allow: /connect
+Allow: /home
+
+# Block sensitive directories and files
+Disallow: /assets/css/
+Disallow: /assets/js/
+Disallow: /assets/scss/
+Disallow: /Doc/
+Disallow: /.git/
+Disallow: /.htaccess
+Disallow: /robots.txt
+Disallow: /sitemap.xml
+Disallow: /package.json
+Disallow: /package-lock.json
+
+# Block error pages from indexing
+Disallow: /404.html
+Disallow: /403.html
+Disallow: /500.html
+
+# Block backup and temporary files
+Disallow: /*.bak$
+Disallow: /*.tmp$
+Disallow: /*.temp$
+Disallow: /*.swp$
+Disallow: /*.old$
+Disallow: /*.orig$
+Disallow: /*.save$
+Disallow: /*.backup$
+Disallow: /*~$
+
+# Sitemap location
+Sitemap: https://rajugottumukkala.in/sitemap.xml
+
+# Crawl delay (be respectful to server)
+Crawl-delay: 1
