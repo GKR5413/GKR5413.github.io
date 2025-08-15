@@ -1,0 +1,16 @@
+{
+  "name": "Raju Gottumukkala Portfolio",
+  "short_name": "Raju Portfolio",
+  "description": "Personal portfolio website for Raju Gottumukkala - DevOps Engineer and Computer Science Student",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#670000",
+  "icons": [
+    {
+      "src": "assets/img/favicon.ico",
+      "sizes": "16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}
