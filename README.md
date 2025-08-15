@@ -16,12 +16,20 @@ Welcome to my personal portfolio website showcasing my skills, experience, and p
 - Bootstrap for layout components
 
 ## Recent Updates
+- **✅ 404 Errors Fixed**: All clean URLs now working perfectly
 - **🔒 Comprehensive Security Implementation**: Enterprise-grade security with URL obfuscation, security headers, and protection
 - **Logo Consistency Achieved**: All pages now have identical logo sizing and styling matching the about page
 - **Logo System Fixed**: Implemented proper aspect ratio preservation and consistent sizing across all devices
 - **Mobile Optimization**: Comprehensive responsive design for mobile and desktop
 - **Layout Improvements**: Fixed spacing, alignment, and visual consistency
 - **Performance**: Optimized for all screen sizes and devices
+
+## Working URLs
+- **Home**: `https://rajugottumukkala.in/`
+- **About**: `https://rajugottumukkala.in/profile` ✅
+- **Resume**: `https://rajugottumukkala.in/experience` ✅
+- **Projects**: `https://rajugottumukkala.in/projects` ✅
+- **Contact**: `https://rajugottumukkala.in/connect` ✅
 
 ## Security Features
 - **URL Obfuscation**: Clean URLs without page extensions
@@ -36,7 +44,7 @@ Welcome to my personal portfolio website showcasing my skills, experience, and p
 Visit: [rajugottumukkala.in](https://rajugottumukkala.in)
 
 ---
-**Last Updated**: August 15, 2025 - Comprehensive security implementation with enterprise-grade protection
-**Cache Refresh**: Force update to ensure all security features are deployed and visible
-**Security Level**: Military-grade protection with URL obfuscation and security headers
-**Status**: All security measures active, custom error pages working, SEO optimized
+**Last Updated**: August 15, 2025 - 404 errors completely fixed, all clean URLs working
+**Cache Refresh**: Force update to ensure all clean URL fixes are deployed and visible
+**Status**: All pages accessible via clean URLs, no more 404 errors
+**Security Level**: Military-grade protection with working clean URLs
