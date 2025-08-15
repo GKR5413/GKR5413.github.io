@@ -1,32 +1,634 @@
-/* Normal desktop :1200px. */
-@media (min-width: 1200px) and (max-width: 1500px) {
+/* ===================================
+   COMPREHENSIVE MOBILE-FIRST RESPONSIVE DESIGN SYSTEM
+   =================================== */
 
+/* ===================================
+   BASE MOBILE STYLES (320px and up)
+   =================================== */
 
+/* Global Mobile Optimizations */
+* {
+    box-sizing: border-box;
 }
 
-
-/* Normal desktop :992px. */
-@media (min-width: 992px) and (max-width: 1200px) {
-
-
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
 
- 
-/* Tablet desktop :768px. */
+/* Touch-friendly button sizes */
+.btn, button, input[type="submit"], input[type="button"] {
+    min-height: 44px;
+    min-width: 44px;
+}
+
+/* Mobile-optimized form elements */
+input, textarea, select {
+    font-size: 16px; /* Prevents zoom on iOS */
+    max-width: 100%;
+}
+
+/* Mobile navigation improvements */
+.mobile_menu {
+    background: #fff;
+    border-top: 1px solid #eee;
+}
+
+.mobile_menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.mobile_menu li {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.mobile_menu a {
+    display: block;
+    padding: 15px 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.mobile_menu a:hover,
+.mobile_menu a.active {
+    background: #f8f9fa;
+    color: #670000;
+}
+
+/* Mobile header optimizations */
+.header-area {
+    position: relative;
+}
+
+.main-header {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #670000;
+    margin: 0;
+}
+
+/* Mobile hero section */
+.h1-hero {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.h1-hero h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.h1-hero p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* Mobile section optimizations */
+.section-padding {
+    padding: 40px 20px;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section-subtitle {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Mobile grid system */
+.mobile-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Mobile card optimizations */
+.mobile-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border: 1px solid #f0f0f0;
+}
+
+/* Mobile button optimizations */
+.mobile-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #670000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s ease;
+    min-height: 48px;
+    line-height: 1.2;
+}
+
+.mobile-btn:hover {
+    background: #8B0000;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(103,0,0,0.3);
+}
+
+/* ===================================
+   SMALL MOBILE OPTIMIZATIONS (320px - 480px)
+   =================================== */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .h1-hero {
+        padding: 40px 15px;
+    }
+    
+    .h1-hero h1 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+    
+    .h1-hero p {
+        font-size: 0.9rem;
+        margin-bottom: 25px;
+    }
+    
+    .section-padding {
+        padding: 30px 15px;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+    
+    .section-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 25px;
+    }
+    
+    .mobile-grid {
+        gap: 15px;
+    }
+    
+    .mobile-card {
+        padding: 16px;
+    }
+    
+    .mobile-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+        min-height: 44px;
+    }
+    
+    .logo-text {
+        font-size: 1.3rem;
+    }
+    
+    .mobile_menu a {
+        padding: 12px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+/* ===================================
+   MEDIUM MOBILE STYLES (481px - 767px)
+   =================================== */
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .h1-hero {
+        padding: 50px 25px;
+    }
+    
+    .h1-hero h1 {
+        font-size: 2rem;
+        margin-bottom: 18px;
+    }
+    
+    .h1-hero p {
+        font-size: 1rem;
+        margin-bottom: 28px;
+    }
+    
+    .section-padding {
+        padding: 35px 25px;
+    }
+    
+    .section-title {
+        font-size: 1.7rem;
+        margin-bottom: 18px;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+        margin-bottom: 28px;
+    }
+    
+    .mobile-grid {
+        gap: 18px;
+    }
+    
+    .mobile-card {
+        padding: 18px;
+    }
+    
+    .mobile-btn {
+        padding: 11px 22px;
+        font-size: 0.95rem;
+        min-height: 46px;
+    }
+    
+    .logo-text {
+        font-size: 1.4rem;
+    }
+    
+    .mobile_menu a {
+        padding: 14px 18px;
+        font-size: 0.95rem;
+    }
+}
+
+/* ===================================
+   TABLET STYLES (768px - 991px)
+   =================================== */
+
 @media (min-width: 768px) and (max-width: 991px) {
-
-
+    .h1-hero {
+        padding: 70px 40px;
+    }
+    
+    .h1-hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 25px;
+    }
+    
+    .h1-hero p {
+        font-size: 1.1rem;
+        margin-bottom: 35px;
+    }
+    
+    .section-padding {
+        padding: 50px 40px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+    
+    .section-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 35px;
+    }
+    
+    .mobile-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    .mobile-card {
+        padding: 25px;
+    }
+    
+    .mobile-btn {
+        padding: 14px 28px;
+        font-size: 1rem;
+        min-height: 48px;
+    }
+    
+    .logo-text {
+        font-size: 1.6rem;
+    }
+    
+    .mobile_menu a {
+        padding: 16px 20px;
+        font-size: 1rem;
+    }
+    
+    /* Tablet-specific layout improvements */
+    .container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    
+    /* Tablet navigation */
+    .main-menu {
+        display: block !important;
+    }
+    
+    .mobile_menu {
+        display: none !important;
+    }
 }
 
- 
-/* small mobile :320px. */
-@media (max-width: 767px) {
+/* ===================================
+   DESKTOP STYLES (992px - 1199px)
+   =================================== */
 
- 
+@media (min-width: 992px) and (max-width: 1199px) {
+    .h1-hero {
+        padding: 80px 50px;
+    }
+    
+    .h1-hero h1 {
+        font-size: 2.8rem;
+        margin-bottom: 30px;
+    }
+    
+    .h1-hero p {
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+    }
+    
+    .section-padding {
+        padding: 60px 50px;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+        margin-bottom: 30px;
+    }
+    
+    .section-subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 40px;
+    }
+    
+    .mobile-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    
+    .mobile-card {
+        padding: 30px;
+    }
+    
+    .mobile-btn {
+        padding: 16px 32px;
+        font-size: 1.1rem;
+        min-height: 50px;
+    }
+    
+    .logo-text {
+        font-size: 1.8rem;
+    }
+    
+    .mobile_menu a {
+        padding: 18px 22px;
+        font-size: 1.1rem;
+    }
+    
+    /* Desktop container */
+    .container {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
 }
- 
-/* Large Mobile :480px. */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-.container {width:450px}
- 
+
+/* ===================================
+   LARGE DESKTOP STYLES (1200px and up)
+   =================================== */
+
+@media (min-width: 1200px) {
+    .h1-hero {
+        padding: 100px 60px;
+    }
+    
+    .h1-hero h1 {
+        font-size: 3.2rem;
+        margin-bottom: 35px;
+    }
+    
+    .h1-hero p {
+        font-size: 1.3rem;
+        margin-bottom: 45px;
+    }
+    
+    .section-padding {
+        padding: 80px 60px;
+    }
+    
+    .section-title {
+        font-size: 2.5rem;
+        margin-bottom: 35px;
+    }
+    
+    .section-subtitle {
+        font-size: 1.3rem;
+        margin-bottom: 45px;
+    }
+    
+    .mobile-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 35px;
+    }
+    
+    .mobile-card {
+        padding: 35px;
+    }
+    
+    .mobile-btn {
+        padding: 18px 36px;
+        font-size: 1.2rem;
+        min-height: 52px;
+    }
+    
+    .logo-text {
+        font-size: 2rem;
+    }
+    
+    .mobile_menu a {
+        padding: 20px 25px;
+        font-size: 1.2rem;
+    }
+    
+    /* Large desktop container */
+    .container {
+        max-width: 1320px;
+        margin: 0 auto;
+    }
+}
+
+/* ===================================
+   TOUCH DEVICE OPTIMIZATIONS
+   =================================== */
+
+@media (hover: none) and (pointer: coarse) {
+    /* Remove hover effects on touch devices */
+    .mobile-btn:hover,
+    .mobile-card:hover,
+    .mobile_menu a:hover {
+        transform: none;
+        box-shadow: none;
+    }
+    
+    /* Increase touch targets */
+    .mobile-btn {
+        min-height: 48px;
+        padding: 14px 28px;
+    }
+    
+    .mobile_menu a {
+        min-height: 48px;
+        padding: 16px 20px;
+    }
+    
+    /* Touch-friendly spacing */
+    .mobile-grid {
+        gap: 25px;
+    }
+    
+    .mobile-card {
+        padding: 25px;
+    }
+}
+
+/* ===================================
+   HIGH DPI DISPLAY OPTIMIZATIONS
+   =================================== */
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .mobile-card {
+        box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    }
+    
+    .mobile-btn {
+        box-shadow: 0 3px 15px rgba(103,0,0,0.2);
+    }
+}
+
+/* ===================================
+   LANDSCAPE MOBILE OPTIMIZATIONS
+   =================================== */
+
+@media (max-width: 767px) and (orientation: landscape) {
+    .h1-hero {
+        padding: 30px 20px;
+    }
+    
+    .h1-hero h1 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+    
+    .h1-hero p {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+    
+    .section-padding {
+        padding: 25px 20px;
+    }
+    
+    .mobile-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+/* ===================================
+   PRINT STYLES
+   =================================== */
+
+@media print {
+    .mobile-btn,
+    .mobile_menu,
+    .header-area {
+        display: none !important;
+    }
+    
+    .mobile-card {
+        box-shadow: none;
+        border: 1px solid #ccc;
+        page-break-inside: avoid;
+    }
+    
+    .h1-hero {
+        background: #fff !important;
+        color: #000 !important;
+        padding: 20px;
+    }
+    
+    .section-padding {
+        padding: 20px;
+    }
+}
+
+/* ===================================
+   ACCESSIBILITY IMPROVEMENTS
+   =================================== */
+
+/* Focus indicators for keyboard navigation */
+.mobile-btn:focus,
+.mobile_menu a:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #670000;
+    outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .mobile-card {
+        border: 2px solid #000;
+    }
+    
+    .mobile-btn {
+        border: 2px solid #000;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .mobile-card {
+        background: #2d2d2d;
+        color: #fff;
+        border-color: #444;
+    }
+    
+    .mobile-btn {
+        background: #8B0000;
+    }
+    
+    .mobile_menu {
+        background: #2d2d2d;
+        border-top-color: #444;
+    }
+    
+    .mobile_menu a {
+        color: #fff;
+        border-bottom-color: #444;
+    }
+    
+    .mobile_menu a:hover {
+        background: #444;
+        color: #FFEFAE;
+    }
 }
