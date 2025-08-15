@@ -2,7 +2,6 @@ User-agent: *
 Allow: /
 Allow: /profile
 Allow: /experience
-Allow: /projects
 Allow: /connect
 Allow: /home
 

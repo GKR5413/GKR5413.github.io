@@ -16,6 +16,7 @@ Welcome to my personal portfolio website showcasing my skills, experience, and p
 - Bootstrap for layout components
 
 ## Recent Updates
+- **🗑️ Pages Cleaned**: Removed projects and blog pages for streamlined navigation
 - **✅ 404 Errors Fixed**: All clean URLs now working perfectly
 - **🔒 Comprehensive Security Implementation**: Enterprise-grade security with URL obfuscation, security headers, and protection
 - **Logo Consistency Achieved**: All pages now have identical logo sizing and styling matching the about page
@@ -28,7 +29,6 @@ Welcome to my personal portfolio website showcasing my skills, experience, and p
 - **Home**: `https://rajugottumukkala.in/`
 - **About**: `https://rajugottumukkala.in/profile` ✅
 - **Resume**: `https://rajugottumukkala.in/experience` ✅
-- **Projects**: `https://rajugottumukkala.in/projects` ✅
 - **Contact**: `https://rajugottumukkala.in/connect` ✅
 
 ## Security Features
