@@ -162,10 +162,11 @@ class PortfolioApp {
                         <div class="col-lg-6">
                             <div class="hero-content">
                                 <h1 class="hero-title">Hi, I'm Raju Gottumukkala</h1>
-                                <p class="hero-subtitle">Software Engineer & Technology Enthusiast</p>
+                                <p class="hero-subtitle">DevOps Engineer & Cloud Technology Specialist</p>
                                 <p class="hero-description">
-                                    Passionate about creating innovative solutions and driving digital transformation. 
-                                    Experienced in full-stack development, cloud technologies, and modern software practices.
+                                    Passionate about cloud infrastructure, automation, and DevOps practices. 
+                                    Experienced in AWS, Kubernetes, Docker, and CI/CD pipelines. 
+                                    Currently pursuing Master's in Computer Science at UMKC with Dean's International Scholarship.
                                 </p>
                                 <div class="hero-buttons">
                                     <a href="#" data-route="profile" class="btn btn-primary">Learn More</a>
@@ -197,16 +198,16 @@ class PortfolioApp {
                     <div class="row align-items-center">
                         <div class="col-lg-6">
                             <div class="about-content">
-                                <h3>Software Engineer with a Passion for Innovation</h3>
+                                <h3>DevOps Engineer with Cloud & Automation Expertise</h3>
                                 <p>
-                                    I'm a dedicated software engineer with expertise in developing scalable applications 
-                                    and implementing cutting-edge technologies. My journey in technology has been driven 
-                                    by curiosity and a desire to solve complex problems.
+                                    I'm a dedicated DevOps Engineer with proven experience in cloud infrastructure, 
+                                    automation, and CI/CD pipelines. My expertise spans AWS, Kubernetes, Docker, 
+                                    and various DevOps tools that drive operational excellence.
                                 </p>
                                 <p>
-                                    With experience in both frontend and backend development, I enjoy creating seamless 
-                                    user experiences and robust server-side solutions. I'm always eager to learn new 
-                                    technologies and contribute to meaningful projects.
+                                    Currently pursuing my Master's in Computer Science at UMKC with a 3.82/4.0 GPA, 
+                                    I'm passionate about implementing scalable solutions and optimizing development workflows. 
+                                    My experience includes reducing deployment failures by 15% and improving system observability.
                                 </p>
                                 <div class="about-buttons">
                                     <a href="#" data-route="profile" class="btn btn-primary">View Full Profile</a>
@@ -239,18 +240,20 @@ class PortfolioApp {
                             <div class="experience-item">
                                 <div class="experience-header">
                                     <div class="company-logo">
-                                        <img src="assets/img/logo/CognizantLogo.png" alt="Cognizant" class="logo-img">
+                                        <img src="assets/img/logo/fis-lg.png" alt="FIS Global" class="logo-img">
                                     </div>
                                     <div class="experience-details">
-                                        <h3>Software Engineer</h3>
-                                        <h4>Cognizant Technology Solutions</h4>
-                                        <p class="duration">2023 - Present</p>
+                                        <h3>DevOps Engineer</h3>
+                                        <h4>Fidelity National Information Services, Inc. (FIS Global)</h4>
+                                        <p class="duration">Jun 2022 – Jul 2023</p>
                                     </div>
                                 </div>
                                 <div class="experience-description">
                                     <p>
-                                        Developing and maintaining enterprise applications using modern technologies. 
-                                        Collaborating with cross-functional teams to deliver high-quality software solutions.
+                                        • Automated cloud infrastructure provisioning for Worldpay, resulting in 20% faster provisioning<br>
+                                        • Deployed highly available microservices, reducing release failures by 15%<br>
+                                        • Improved incident resolution speed, lowering MTTR by 20%<br>
+                                        • Implemented Terraform-based deployments on AWS with Kubernetes orchestration
                                     </p>
                                 </div>
                             </div>
@@ -284,8 +287,8 @@ class PortfolioApp {
                                     <div class="education-details">
                                         <h3>Master of Science in Computer Science</h3>
                                         <h4>University of Missouri-Kansas City</h4>
-                                        <p class="duration">2021 - 2023</p>
-                                        <p class="gpa">GPA: 3.8/4.0</p>
+                                        <p class="duration">Aug 2023 – May 2025</p>
+                                        <p class="gpa">GPA: 3.82/4.0</p>
                                     </div>
                                 </div>
                             </div>
@@ -348,8 +351,11 @@ class PortfolioApp {
                                     <img src="assets/img/gallery/raju-profile.jpg" alt="Raju Gottumukkala" class="rounded-circle" style="width: 200px; height: 200px; object-fit: cover;">
                                 </div>
                                 <h1>Raju Gottumukkala</h1>
-                                <p class="lead">Software Engineer & Technology Enthusiast</p>
+                                <p class="lead">DevOps Engineer & Cloud Technology Specialist</p>
                                 <p class="text-muted">Kansas City, Missouri</p>
+                                <div class="achievement-badge mt-3">
+                                    <span class="badge bg-success">Dean's International Scholarship - $8,000/year</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -371,46 +377,47 @@ class PortfolioApp {
                         <div class="col-lg-8">
                             <div class="about-content">
                                 <p class="mb-4">
-                                    I am a passionate software engineer with a strong foundation in computer science and 
-                                    a drive to create innovative solutions. My journey in technology began with curiosity 
-                                    and has evolved into a professional career focused on building scalable applications.
+                                    I am a passionate DevOps Engineer with expertise in cloud infrastructure, automation, 
+                                    and CI/CD pipelines. My journey in technology has been driven by a desire to optimize 
+                                    development workflows and implement scalable solutions.
                                 </p>
                                 <p class="mb-4">
-                                    With expertise in both frontend and backend development, I enjoy working on full-stack 
-                                    projects that challenge me to think creatively and solve complex problems. I believe 
-                                    in writing clean, maintainable code and staying updated with the latest industry trends.
+                                    Currently pursuing my Master's in Computer Science at UMKC with a 3.82/4.0 GPA, 
+                                    I have proven experience in reducing deployment failures by 15%, improving system 
+                                    observability, and automating cloud infrastructure provisioning.
                                 </p>
                                 <p class="mb-4">
-                                    When I'm not coding, you can find me exploring new technologies, contributing to 
-                                    open-source projects, or sharing knowledge with the developer community.
+                                    My expertise spans AWS, Kubernetes, Docker, Terraform, and various DevOps tools. 
+                                    I'm passionate about implementing Infrastructure-as-Code practices and building 
+                                    robust CI/CD pipelines that drive operational excellence.
                                 </p>
                             </div>
                         </div>
                         <div class="col-lg-4">
                             <div class="skills-section">
-                                <h4>Technical Skills</h4>
+                                <h4>Core Skills</h4>
                                 <div class="skill-item">
-                                    <span class="skill-name">JavaScript/TypeScript</span>
+                                    <span class="skill-name">AWS Cloud</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Kubernetes & Docker</span>
                                     <div class="skill-bar">
                                         <div class="skill-progress" style="width: 90%"></div>
                                     </div>
                                 </div>
                                 <div class="skill-item">
-                                    <span class="skill-name">Python</span>
+                                    <span class="skill-name">Terraform & CI/CD</span>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" style="width: 88%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <span class="skill-name">Python & Java</span>
                                     <div class="skill-bar">
                                         <div class="skill-progress" style="width: 85%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <span class="skill-name">React/Node.js</span>
-                                    <div class="skill-bar">
-                                        <div class="skill-progress" style="width: 80%"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <span class="skill-name">Cloud Technologies</span>
-                                    <div class="skill-bar">
-                                        <div class="skill-progress" style="width: 75%"></div>
                                     </div>
                                 </div>
                             </div>
@@ -434,30 +441,30 @@ class PortfolioApp {
                         <div class="col-lg-6">
                             <div class="experience-card">
                                 <div class="card-header">
-                                    <img src="assets/img/logo/CognizantLogo.png" alt="Cognizant" class="company-logo">
+                                    <img src="assets/img/logo/fis-lg.png" alt="FIS Global" class="company-logo">
                                     <div class="company-info">
-                                        <h4>Software Engineer</h4>
-                                        <h5>Cognizant Technology Solutions</h5>
-                                        <span class="duration">2023 - Present</span>
+                                        <h4>DevOps Engineer</h4>
+                                        <h5>FIS Global</h5>
+                                        <span class="duration">Jun 2022 – Jul 2023</span>
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <p>Developing enterprise applications and collaborating with cross-functional teams.</p>
+                                    <p>Automated cloud infrastructure, reduced deployment failures by 15%, and improved system observability.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="experience-card">
                                 <div class="card-header">
-                                    <img src="assets/img/logo/E-BoxLogo.png" alt="E-Box" class="company-logo">
+                                    <img src="assets/img/logo/CognizantLogo.png" alt="Cognizant" class="company-logo">
                                     <div class="company-info">
-                                        <h4>Software Developer</h4>
-                                        <h5>E-Box Solutions</h5>
-                                        <span class="duration">2022 - 2023</span>
+                                        <h4>Programmer Analyst Trainee</h4>
+                                        <h5>Cognizant Technology Solutions</h5>
+                                        <span class="duration">Jan 2022 – Jun 2022</span>
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    <p>Built web applications and contributed to software development projects.</p>
+                                    <p>Developed Salesforce automation workflows and contributed to agile sprint deliveries.</p>
                                 </div>
                             </div>
                         </div>
@@ -496,20 +503,40 @@ class PortfolioApp {
                             <div class="experience-item">
                                 <div class="experience-header">
                                     <div class="company-logo">
-                                        <img src="assets/img/logo/CognizantLogo.png" alt="Cognizant" class="logo-img">
+                                        <img src="assets/img/logo/fis-lg.png" alt="FIS Global" class="logo-img">
                                     </div>
                                     <div class="experience-details">
-                                        <h3>Software Engineer</h3>
-                                        <h4>Cognizant Technology Solutions</h4>
-                                        <p class="duration">2023 - Present</p>
+                                        <h3>DevOps Engineer</h3>
+                                        <h4>Fidelity National Information Services, Inc. (FIS Global)</h4>
+                                        <p class="duration">Jun 2022 – Jul 2023</p>
                                     </div>
                                 </div>
                                 <div class="experience-description">
                                     <p>
-                                        • Developing and maintaining enterprise applications using modern technologies<br>
-                                        • Collaborating with cross-functional teams to deliver high-quality software solutions<br>
-                                        • Implementing best practices for code quality and performance optimization<br>
-                                        • Participating in code reviews and contributing to technical discussions
+                                        • Automated cloud infrastructure provisioning for Worldpay, resulting in 20% faster provisioning and improved consistency, by implementing Terraform-based deployments on AWS (EC2, S3, RDS) with standardized Infrastructure-as-Code practices.<br>
+                                        • Deployed highly available and reliable microservices, reducing release failures by 15%, by orchestrating Docker containers with Kubernetes (EKS) and building Continuous Integration / Continuous Deployment pipelines using Jenkins and GitLab CI/CD with automated tests and quality checks.<br>
+                                        • Improved incident resolution speed and system observability, lowering MTTR by 20%, by integrating AWS CloudWatch and developing custom monitoring dashboards.<br>
+                                        • Collaborated with development and operations teams to troubleshoot deployment failures, analyze system logs, and fine-tune rollback and recovery procedures, minimizing downtime during production rollouts.<br>
+                                        • Contributed to production support tasks by addressing deployment failures, analyzing system logs, and improving deployment rollback and recovery processes to minimize downtime.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="experience-item">
+                                <div class="experience-header">
+                                    <div class="company-logo">
+                                        <img src="assets/img/logo/CognizantLogo.png" alt="Cognizant" class="logo-img">
+                                    </div>
+                                    <div class="experience-details">
+                                        <h3>Programmer Analyst Trainee</h3>
+                                        <h4>Cognizant Technology Solutions Corp (CTS)</h4>
+                                        <p class="duration">Jan 2022 – Jun 2022</p>
+                                    </div>
+                                </div>
+                                <div class="experience-description">
+                                    <p>
+                                        • Improved internal data accuracy by ~15% and reduced manual data errors by ~20% by developing Salesforce automation workflows using Apex, Process Builder, RESTful APIs, custom triggers, Lightning components, and validation logic.<br>
+                                        • Contributed to on-time agile sprint deliveries by supporting requirement gathering, functional testing, and deployment processes, ensuring smoother feature rollouts and stable production releases.
                                     </p>
                                 </div>
                             </div>
@@ -520,38 +547,15 @@ class PortfolioApp {
                                         <img src="assets/img/logo/E-BoxLogo.png" alt="E-Box" class="logo-img">
                                     </div>
                                     <div class="experience-details">
-                                        <h3>Software Developer</h3>
-                                        <h4>E-Box Solutions</h4>
-                                        <p class="duration">2022 - 2023</p>
+                                        <h3>Programming Intern</h3>
+                                        <h4>E-Box, India</h4>
+                                        <p class="duration">Apr 2020 – Jun 2020</p>
                                     </div>
                                 </div>
                                 <div class="experience-description">
                                     <p>
-                                        • Built responsive web applications using modern frontend frameworks<br>
-                                        • Developed RESTful APIs and backend services<br>
-                                        • Collaborated with designers and product managers to implement user requirements<br>
-                                        • Participated in agile development processes
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="experience-item">
-                                <div class="experience-header">
-                                    <div class="company-logo">
-                                        <img src="assets/img/logo/FISLogo.png" alt="FIS" class="logo-img">
-                                    </div>
-                                    <div class="experience-details">
-                                        <h3>Software Engineer Intern</h3>
-                                        <h4>FIS Global</h4>
-                                        <p class="duration">2021 - 2022</p>
-                                    </div>
-                                </div>
-                                <div class="experience-description">
-                                    <p>
-                                        • Assisted in developing financial software applications<br>
-                                        • Worked on bug fixes and feature implementations<br>
-                                        • Gained experience with enterprise software development practices<br>
-                                        • Collaborated with senior developers on various projects
+                                        • Integrated university street-view data into the official website using HTML, CSS, JavaScript, and Google Maps API, enabling interactive campus tours.<br>
+                                        • Improved website engagement by ~20% through detailed navigation across campus locations. Collaborated with University IT teams to ensure smooth integration and optimized cross-device performance.
                                     </p>
                                 </div>
                             </div>
@@ -576,44 +580,42 @@ class PortfolioApp {
                         <div class="col-lg-12">
                             <div class="education-item">
                                 <div class="education-header">
-                                    <div class="company-logo">
+                                    <div class="education-logo">
                                         <img src="assets/img/logo/UMKCLogo.png" alt="UMKC" class="logo-img">
                                     </div>
                                     <div class="education-details">
                                         <h3>Master of Science in Computer Science</h3>
                                         <h4>University of Missouri-Kansas City</h4>
-                                        <p class="duration">2021 - 2023</p>
-                                        <p class="gpa">GPA: 3.8/4.0</p>
+                                        <p class="duration">Aug 2023 – May 2025</p>
+                                        <p class="gpa">GPA: 3.82/4.0</p>
                                     </div>
                                 </div>
                                 <div class="education-description">
                                     <p>
-                                        • Specialized in software engineering and web technologies<br>
-                                        • Completed coursework in advanced algorithms, database systems, and software architecture<br>
-                                        • Participated in research projects and academic competitions<br>
-                                        • Graduated with honors
+                                        • Relevant Coursework: Cloud Computing, Advanced Operating Systems, Design and Analysis of Algorithms, Network Architecture, Data Science, Cryptography, Information Security Assurance, Principles of Big Data Management, Internet of Things, Statistical Learning<br>
+                                        • Dean's International Scholarship: Awarded $8,000 per year for academic excellence<br>
+                                        • Currently pursuing with focus on cloud technologies and DevOps practices
                                     </p>
                                 </div>
                             </div>
 
                             <div class="education-item">
                                 <div class="education-header">
-                                    <div class="company-logo">
+                                    <div class="education-logo">
                                         <img src="assets/img/logo/LPULogo.png" alt="LPU" class="logo-img">
                                     </div>
                                     <div class="education-details">
-                                        <h3>Bachelor of Technology in Computer Science</h3>
+                                        <h3>Bachelor of Technology in Computer Science and Engineering</h3>
                                         <h4>Lovely Professional University</h4>
-                                        <p class="duration">2017 - 2021</p>
-                                        <p class="gpa">GPA: 3.9/4.0</p>
+                                        <p class="duration">Aug 2018 – May 2022</p>
+                                        <p class="gpa">GPA: 3.33/4.0</p>
                                     </div>
                                 </div>
                                 <div class="education-description">
                                     <p>
-                                        • Foundation in computer science principles and programming fundamentals<br>
-                                        • Completed projects in web development, database management, and software engineering<br>
+                                        • Relevant Coursework: Object Oriented Programming, Data Structures and Algorithms, Programming in Java, Artificial Intelligence, Software Engineering, Virtualization and Cloud Computing, Computer Networking, Operating Systems, Python Programming, Database Management<br>
                                         • Active member of coding clubs and technical societies<br>
-                                        • Graduated with distinction
+                                        • Completed projects in web development, database management, and software engineering
                                     </p>
                                 </div>
                             </div>
@@ -622,6 +624,50 @@ class PortfolioApp {
                 </div>
             </section>
             <!-- Education End -->
+
+            <!-- Projects Section Start -->
+            <section class="projects-section section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="section-title text-center mb-5">
+                                <h2>Academic Projects</h2>
+                                <p>Research and development work at UMKC</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="project-item">
+                                <div class="project-header">
+                                    <h3>IoT Data Security in Cloud Ecosystem</h3>
+                                    <p class="project-duration">Aug 2024 – Dec 2024</p>
+                                </div>
+                                <div class="project-description">
+                                    <p>
+                                        • Designed and implemented a secure cloud-based system for real-time IoT data transmission using OpenStack infrastructure and hybrid encryption techniques including ECC, Twofish, and AES, ensuring confidentiality and integrity of sensitive data streams.<br>
+                                        • Achieved over 95% system uptime through deployment of a fault-tolerant architecture and simulation of edge-to-cloud communication scenarios under various network conditions to validate encryption robustness and scalability.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="project-item">
+                                <div class="project-header">
+                                    <h3>Stockfeed Segregation Using Intent-Driven Publish-Subscribe</h3>
+                                    <p class="project-duration">Jan 2024 – May 2024</p>
+                                </div>
+                                <div class="project-description">
+                                    <p>
+                                        • Developed a real-time stockfeed segregation platform using Intent-Driven Publish-Subscribe (IDPS) architecture, integrating Kafka, PostgreSQL, and Java to classify high-volume data streams dynamically and reduce overall data latency by 20%.<br>
+                                        • Incorporated Hadoop Distributed File System (HDFS) to enable scalable data storage and retrieval, and implemented intent-based message filtering logic for faster, more accurate routing of financial data to relevant consumers.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Projects End -->
         `;
     }
 
