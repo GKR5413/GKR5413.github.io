@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raju Gottumukkala - Software Engineer</title>
+    <meta name="description" content="Raju Gottumukkala - Software Engineer & Technology Enthusiast. Experienced in full-stack development, cloud technologies, and modern software practices.">
+    <meta name="keywords" content="Raju Gottumukkala, Software Engineer, Full Stack Developer, Web Development, Kansas City">
+    <meta name="author" content="Raju Gottumukkala">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Raju Gottumukkala - Software Engineer">
+    <meta property="og:description" content="Software Engineer & Technology Enthusiast with expertise in modern web technologies">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rajugottumukkala.in">
+    <meta property="og:image" content="https://rajugottumukkala.in/assets/img/gallery/raju-profile.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Raju Gottumukkala - Software Engineer">
+    <meta name="twitter:description" content="Software Engineer & Technology Enthusiast with expertise in modern web technologies">
+    <meta name="twitter:image" content="https://rajugottumukkala.in/assets/img/gallery/raju-profile.jpg">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="app.css">
+    
+    <!-- Custom CSS for JavaScript App -->
+    <style>
+        /* Loading Spinner Styles */
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        /* Notification Styles */
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 10000;
+            max-width: 400px;
+            animation: slideInRight 0.3s ease-out;
+        }
+
+        .notification-content {
+            background: white;
+            border-radius: 8px;
+            padding: 16px 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .notification-success .notification-content {
+            border-left: 4px solid #28a745;
+        }
+
+        .notification-error .notification-content {
+            border-left: 4px solid #dc3545;
+        }
+
+        .notification i {
+            font-size: 20px;
+        }
+
+        .notification-success i {
+            color: #28a745;
+        }
+
+        .notification-error i {
+            color: #dc3545;
+        }
+
+        .notification-close {
+            background: none;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            margin-left: auto;
+            color: #6c757d;
+        }
+
+        .notification-close:hover {
+            color: #343a40;
+        }
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Animation Classes */
+        .animate-in {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Skill Bar Styles */
+        .skill-item {
+            margin-bottom: 20px;
+        }
+
+        .skill-name {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .skill-bar {
+            height: 8px;
+            background: #e9ecef;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background: linear-gradient(90deg, #007bff, #0056b3);
+            border-radius: 4px;
+            transition: width 1s ease-in-out;
+            width: 0;
+        }
+
+        /* Form Styles */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #0056b3, #004085);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #007bff;
+            border: 2px solid #007bff;
+        }
+
+        .btn-outline:hover {
+            background: #007bff;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .btn-lg {
+            padding: 16px 32px;
+            font-size: 18px;
+        }
+
+        /* Social Link Styles */
+        .social-links-wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            min-width: 120px;
+        }
+
+        .social-link:hover {
+            transform: translateY(-5px);
+            text-decoration: none;
+        }
+
+        .social-link.linkedin:hover {
+            background: #0077b5;
+            color: white;
+        }
+
+        .social-link.github:hover {
+            background: #333;
+            color: white;
+        }
+
+        .social-link.email:hover {
+            background: #ea4335;
+            color: white;
+        }
+
+        .social-link i {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        /* Experience Card Styles */
+        .experience-card {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 24px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .experience-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .company-logo {
+            width: 60px;
+            height: 60px;
+            margin-right: 16px;
+            flex-shrink: 0;
+        }
+
+        .company-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+
+        .company-info h4 {
+            margin: 0 0 4px 0;
+            color: #333;
+        }
+
+        .company-info h5 {
+            margin: 0 0 4px 0;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .duration {
+            color: #999;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .social-links-wrapper {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .social-link {
+                min-width: 200px;
+            }
+
+            .experience-card {
+                padding: 16px;
+            }
+
+            .card-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .company-logo {
+                margin-right: 0;
+                margin-bottom: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Start -->
+    <header class="header-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <div class="logo">
+                        <a href="/" class="logo-link">
+                            <img src="assets/img/logo/logo.png" alt="Raju Gottumukkala" class="logo-img">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="header-right d-flex justify-content-end align-items-center">
+                        <!-- Desktop Navigation -->
+                        <nav class="desktop-nav">
+                            <ul id="navigation" class="nav-menu">
+                                <li><a href="#" data-route="home" class="nav-link active">Home</a></li>
+                                <li><a href="#" data-route="profile" class="nav-link">Profile</a></li>
+                                <li><a href="#" data-route="experience" class="nav-link">Experience</a></li>
+                                <li><a href="#" data-route="connect" class="nav-link">Connect</a></li>
+                            </ul>
+                        </nav>
+                        
+                        <!-- Mobile Menu Toggle -->
+                        <div class="mobile-menu-toggle d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-nav-menu">
+            <li><a href="#" data-route="home" class="mobile-nav-link active">Home</a></li>
+            <li><a href="#" data-route="profile" class="mobile-nav-link">Profile</a></li>
+            <li><a href="#" data-route="experience" class="mobile-nav-link">Experience</a></li>
+            <li><a href="#" data-route="connect" class="mobile-nav-link">Connect</a></li>
+        </ul>
+    </div>
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay"></div>
+
+    <!-- Main Content Area -->
+    <main id="main-content">
+        <!-- Content will be dynamically loaded here by JavaScript -->
+    </main>
+
+    <!-- Footer Start -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-copyright text-center">
+                        <p>&copy; 2024 Raju Gottumukkala. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- JavaScript -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
