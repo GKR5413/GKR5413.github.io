@@ -1,0 +1,5 @@
+CACHE_REFRESH_TIMESTAMP=2024-12-16T20:45:00Z
+DEPLOYMENT_ID=domain-landing-fix-49fafe9
+FORCE_REBUILD=true
+STATUS=active
+PURPOSE=ensure_portfolio_loads_correctly
